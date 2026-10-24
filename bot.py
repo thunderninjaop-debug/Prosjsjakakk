@@ -870,17 +870,17 @@ def KeyboardButton(*args, **kwargs):
 # ---------------------------------------------------------------------------
 # 1. CONFIGURATION
 # ---------------------------------------------------------------------------
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8902391957:AAFaIKn8qtXRFYRvCWwdQyexJ5ybzHzWSkA").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8963617329:AAGEvTJDuXUqYI4Fdcb_c60pFq8_sPhccMg").strip()
 API_ID = int(os.getenv("API_ID", "34098472") or 0)
 API_HASH = os.getenv("API_HASH", "eb67cebd80cec5c397eb80b4cf4193b4").strip()
 SESSION_NAME = os.getenv("SESSION_NAME", "smm_bot_session")
 # Mini App web server. WEBAPP_URL must be the public HTTPS address that points to this server
 # (reverse proxy / tunnel -> WEBAPP_HOST:WEBAPP_PORT). It can also be changed from the DB setting WEBAPP_URL.
-WEBAPP_URL = os.getenv("WEBAPP_URL", "").strip()
+WEBAPP_URL = os.getenv("WEBAPP_URL", "https://vericelapso.vercel.app/").strip()
 WEBAPP_HOST = os.getenv("WEBAPP_HOST", "0.0.0.0")
-WEBAPP_PORT = int(os.getenv("WEBAPP_PORT", os.getenv("PORT", "6679")) or 8080)
+WEBAPP_PORT = int(os.getenv("WEBAPP_PORT", os.getenv("PORT", "8080")) or 8080)
 WEBAPP_PUBLIC_URL = WEBAPP_URL
-ADMIN_IDS = [int(x.strip()) for x in os.getenv("ADMIN_IDS", "312928333").split(",") if x.strip()]
+ADMIN_IDS = [int(x.strip()) for x in os.getenv("ADMIN_IDS", "8363262755").split(",") if x.strip()]
 DB_PATH = os.getenv("DB_PATH", "smm_reseller.db")
 BOT_NAME = os.getenv("BOT_NAME", "SMM Store")
 
